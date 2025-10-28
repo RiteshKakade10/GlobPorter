@@ -31,8 +31,7 @@ function Footer() {
               <li><Link to="/services" className="hover:underline">Services</Link></li>
               <li><Link to="/enquiry" className="hover:underline">Enquiry</Link></li>
               <li><Link to="/about" className="hover:underline">About Us</Link></li>
-              <li><Link to="/contact" className="hover:underline">Contact</Link></li>
-            </ul>
+              </ul>
           </div>
 
           {/* Support */}
@@ -53,11 +52,11 @@ function Footer() {
               </a>
             </p>
             <p className="text-sm">
-              <a href="tel:+911234567890" className="hover:underline">
-                +91 12345 67890
+              <a href="tel:+918275272746" className="hover:underline">
+                +91 82752 72746
               </a>
             </p>
-            <p className="text-sm">Mumbai, India</p>
+            <p className="text-sm">Pune, India</p>
 
             {/* Social Icons */}
             <div className="flex space-x-4 mt-4 text-lg">

@@ -123,13 +123,13 @@ function Enterprise() {
           Request Enterprise Demo
         </button>
         <p className="mt-4 text-gray-600">
-          Or contact our sales team at{" "}
-          <a
+          Or contact our sales team{" "}
+          {/* <a
             href="mailto:sales@globeporter.com"
             className="text-blue-600 underline"
           >
             sales@globeporter.com
-          </a>
+          </a> */}
         </p>
       </div>
     </div>

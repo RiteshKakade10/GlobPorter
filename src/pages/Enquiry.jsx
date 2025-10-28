@@ -44,13 +44,16 @@ function Enquiry() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const formErrors = validate();
+
     if (Object.keys(formErrors).length === 0) {
       try {
+        // Hardcoded backend URL
         const response = await fetch("http://localhost:4040/api/enquiry", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(formData),
-        });
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify(formData),
+});
+
 
         const data = await response.json();
 
@@ -72,7 +75,9 @@ function Enquiry() {
         }
       } catch (err) {
         console.error("Error submitting enquiry:", err);
-        setServerError("Failed to submit. Please try again later.");
+        setServerError(
+          "Failed to submit. Please check your network or try again later."
+        );
         setSubmitted(false);
       }
     } else {
@@ -109,11 +114,7 @@ function Enquiry() {
           </p>
         )}
 
-        <form
-          onSubmit={handleSubmit}
-          noValidate
-          className="space-y-4 md:space-y-6"
-        >
+        <form onSubmit={handleSubmit} noValidate className="space-y-4 md:space-y-6">
           {/* User Type */}
           <div>
             <label className="block mb-1 font-semibold">I am a</label>

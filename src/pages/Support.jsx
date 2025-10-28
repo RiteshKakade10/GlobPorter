@@ -95,7 +95,7 @@ function Support() {
       {/* Offices Section */}
       <div className="text-center text-white py-20">
         <h2 className="text-3xl font-bold">OUR OFFICES</h2>
-        <p className="text-gray-400 mt-2">Coming soon: add office addresses, maps, or contact details.</p>
+        <p className="text-gray-400 mt-2">Coming soon...</p>
       </div>
     </div>
   );

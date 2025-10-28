@@ -11,10 +11,12 @@ import Footer from '../components/Footer.jsx';
 import Blogs from "../pages/Blogs.jsx";
 import PrivacyPolicy from "../pages/PrivacyPolicy.jsx";
 import TermsAndConditions from "../pages/TermsAndConditions.jsx";
+import Services from "../pages/Services.jsx";
+import AboutUs from "../pages/AboutUs.jsx";
 
 function App() {
   return (
-    <Router basename="/frontend/">
+    <Router>
       {/* Full page flex layout */}
       <div className="flex flex-col min-h-screen">
         <Navbar />
@@ -32,6 +34,8 @@ function App() {
             {/* footer Tabs*/}
             <Route path="/terms" element={<TermsAndConditions />} />
             <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+            <Route path="/about" element={<AboutUs/>} />
+            <Route path="/services" element={<Services/>} />
           </Routes>
         </main>
         <Footer />
