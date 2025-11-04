@@ -48,7 +48,7 @@ function Enquiry() {
     if (Object.keys(formErrors).length === 0) {
       try {
         // Hardcoded backend URL
-        const response = await fetch("http://localhost:4040/api/enquiry", {
+        const response = await fetch("https://glob-porter-backend.vercel.app/api/enquiry", {
   method: "POST",
   headers: { "Content-Type": "application/json" },
   body: JSON.stringify(formData),
